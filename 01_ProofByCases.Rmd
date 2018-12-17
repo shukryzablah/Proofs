@@ -1,0 +1,3 @@
+# Proof By Cases
+
+This is the first proof.

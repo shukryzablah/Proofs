@@ -1,0 +1,10 @@
+---
+title: "Transition to Theoretical Mathematics"
+subtitle: "Proof Portfolio"
+author: "Shukry Zablah"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+site: bookdown::bookdown_site
+output:
+  bookdown::pdf_document2:
+    toc: yes
+---
