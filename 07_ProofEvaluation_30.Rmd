@@ -1,0 +1,10 @@
+# Proof Evaluation 30
+
+\begin{claim}{1}
+Let $f:\mathbb{R} \to \mathbb{R}$ be a function and suppose that $A \subseteq \mathbb{R}$ is a nonempty set which is bounded from above. THen $f(A)$ is bounded from above.
+\end{claim}
+
+\begin{proof}
+Let $u \in \mathbb{R}$ be an upper bound fror $A$. Then $a \leq u$ for all $a \in A$. This implies $f(a) \leq f(u)$ for all $a \in A$. Hence $f(u) \in \mathbb{R}$ is an upper bound for $f(A)$.
+\end{proof}
+

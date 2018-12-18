@@ -1,3 +1,11 @@
 # Contraposition Proof
 
+\begin{claim}{1}
+
+\end{claim}
+
+\begin{proof}
+
+\end{proof}
+
 \newpage

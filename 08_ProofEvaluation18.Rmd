@@ -1,0 +1,14 @@
+# Proof Evaluation 18
+
+\begin{claim}{1}
+Given $a \in \mathbb{R} \setminus \{0\}$, one has that $a^n = 1$ for all $n \in \mathbb{N_0}$
+\end{claim}
+
+\begin{proof}
+If $n = 0$ then $a^0 = 1$. Thus the claim is true for the base case. Next, fix $n \in \mathbb{N} \cup \{0\}$ and assume that the claim is true for all $k \in \mathbb{N_0}$ with $k \leq n$, i.e., assume that $a^k = 1$ for all $k \in \mathbb{N_0}$ with $k \leq n$. We want to show that the claim is true for $n + 1$. Observe that
+
+\[a^{n+1} = \dfrac{a^n * a^n}{a^{n-1}} = \dfrac{1 * 1}{1} = 1\],
+
+where we have used the induction hypothesis in the second equality. Thus the claim is true for $n + 1$ and by PMI we can now conclude that the claim is true for all $n \in \mathbb{N_0}$.
+\end{proof}
+
