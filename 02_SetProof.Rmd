@@ -1,2 +1,33 @@
 # Set Proof
 
+Let $f:A\to B$ be a function. Prove the following statements.
+
+\begin{claim}{1}
+  Let $C,D\subseteq B$. Then $f^{-1}(C) \cup f^{-1}(D) = f^{-1} \big( C \cup D \big)$.
+\end{claim}
+
+\begin{proof}
+
+We will show that Claim 1 is true by showing $f^{-1}(C) \cup f^{-1}(D) \subseteq f^{-1} \big( C \cup D \big)$ and $f^{-1} \big( C \cup D \big) \subseteq f^{-1}(C) \cup f^{-1}(D)$.
+
+We first show that $f^{-1}(C) \cup f^{-1}(D) \subseteq f^{-1} \big( C \cup D \big)$. By definition of a subset, given an arbitrary element $x$, the statement we are trying to show is equivalent to the statement that if $x \in f^{-1}(C) \cup f^{-1}(D)$ then $x \in f^{-1} \big( C \cup D \big)$. 
+
+Let us assume that $x \in f^{-1}(C) \cup f^{-1}(D)$. We assume that it is the case that $x \in f^{-1}(C)$ then by definition of the preimage we know that $f(x) \in C$. Logically, it would also be true that $f(x) \in C \cup f(x) \in D$. Then observe that since $f(x) \in \big(C \cup D \big)$, again, by the definition of preimage it follows that $x \in f^{-1} \big (C \cup D \big)$. The argument for the case in which $x \in f^{-1}(D)$ follows the same argument. Therefore, we have that $f^{-1}(C) \cup f^{-1}(D) \subseteq f^{-1} \big( C \cup D \big)$ as desired.
+
+Now, we proceed to show that $f^{-1} \big( C \cup D \big) \subseteq f^{-1}(C) \cup f^{-1}(D)$. Given an element $x$, assume that $x \in f^{-1} \big( C \cup D \big)$. We will show that $x \in f^{-1}(C) \cup f^{-1}(D)$. 
+
+By the definition of preimage we have that $f(x) \in \big( C \cup D \big)$. However, if $f(x)$ is in the union of $C$ and $D$ then logically it follows that $f(x) \in C \cup f(x) \in D$. By the definition of preimage it holds true that $x \in f^{-1}(C) \cup f^{-1}(D)$. Therefore it is true that $f^{-1} \big( C \cup D \big) \subseteq f^{-1}(C) \cup f^{-1}(D)$.
+
+Since we have shown that $f^{-1}(C) \cup f^{-1}(D) \subseteq f^{-1} \big( C \cup D \big)$ is true and that $f^{-1} \big( C \cup D \big) \subseteq f^{-1}(C) \cup f^{-1}(D)$ is also true, then by definition we have that $f^{-1}(C) \cup f^{-1}(D) = f^{-1} \big( C \cup D \big)$ as desired.
+
+
+\end{proof}
+  
+\begin{claim}{2}
+  Let $C,D\subseteq A$. If $f$ is injective then $f(C)\cap f(D)\subseteq f\big(C\cap D\big)$.
+\end{claim}
+
+\begin{proof}
+\end{proof}
+
+

@@ -1,23 +1,27 @@
 # Contradiction Proof
 
+Let $\prod\limits_{n=1}^{\infty}\mathbb{N}:=\mathbb{N}\times\mathbb{N}\times\cdots\times\mathbb{N}\times\cdots:=\big\{(a_1,a_2,\dots,a_n,\dots):\,a_n\in\mathbb{N},\,\,\forall\,n\in\mathbb{N}\big\}$.
+
 \begin{claim}{1}
 
-Let $f:A\to B$ be an injective function. Prove for every $y\in B$, one has that either $f^{-1}(\{y\})=\emptyset$ or $f^{-1}(\{y\})$ contains only one element.
+$\prod\limits_{n=1}^{\infty}\mathbb{N}$ is uncountable.
 
 \end{claim}
 
 \begin{proof}
 
-We proceed by contradiction. 
+We proceed to show the original statement is true by contradiction. 
 
-Assume that there is some $y \in B$  such that $f^{-1}(\{y\})$ has two or more elements. 
+Assume to the contrary that $\prod\limits_{n=1}^{\infty}\mathbb{N}$ is countable. By definition it follows that there exists a bijection $\varphi:\mathbb{N} \to \prod\limits_{n=1}^{\infty}\mathbb{N}$. Seeking a contradiction, we will show how $\varphi$ cannot be surjective. 
 
-Let $x_1$ and $x_2$ be two distinct elements in $f^{-1}(\{y\})$.
+Since $\varphi$ is bijective, we know that $f(n) \in \prod\limits_{n=1}^{\infty}\mathbb{N}$ for every $n \in \mathbb{N}$. For every $n \in \mathbb{N}$ we can write $f(n) = (a_1^{(n)}, a_2^{(n)}, a_3^{(n)} \dots, a_m^{(n)}, \dots)$, where $m \in \mathbb{N}$.
 
-Since $f:A\to B$ is an injective function, by definition we have that for every $a, b \in A$ if $f(a) = f(b)$ then it follows that $a = b$. 
+Let's define $x \in \prod\limits_{n=1}^{\infty}\mathbb{N}$ by setting $a_{m}^{(n)}:=\begin{cases}3 \text{ if } a ^{\left( n\right) }_{n} \neq 3\\4 \text{ if }a^{\left( n\right) }_{n}=3\end{cases}$ for every $k \in \mathbb{N}$.
 
-Note that by the definition of the preimage we know that $x_1 \in A$ and $x_2 \in A$. We also have that $f(x_1) = f(x_2)$ because both elements are in the preimage. Then it follows that $x_1 = x_2$. However, this is a contradiction because $x_1$ and $x_2$ are two distinct elements. 
+Thus, by construction we have that $x \neq f(n)$ for every $n \in \mathbb{N}$ since $a_m^{(n)} \neq a_n^{(n)}$.
 
-Thus we have that there cannot be some $y \in B$  such that $f^{-1}(\{y\})$ has two or more elements and we have shown the initial statement as desired.
+At this point we have that $x \in \prod\limits_{n=1}^{\infty}\mathbb{N}$ but also for every $n \in \mathbb{N}$ we have that $x \notin f(n)$. This means that by definition, $varphi$ cannot be surjective, and since $\varphi$ had been said to be bijective, is a contradiction. 
+
+Hence, we have that shown that the original statement that $\prod\limits_{n=1}^{\infty}\mathbb{N}$ is uncountable is true.
 
 \end{proof}

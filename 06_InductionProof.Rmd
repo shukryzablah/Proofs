@@ -1,1 +1,60 @@
 # Induction Proof
+
+Proof the following claims.
+
+\begin{claim}{1}
+  Show that $2^n\leq 3^n$ for each $n\in\mathbb{N}$.
+\end{claim}
+\vskip.08in
+
+\begin{proof}
+
+We proceed to prove the statement by induction. 
+
+Let us consider the base case when $n = 1$. Observe that we have that $2^1 \leq 3^1$ which is true.
+
+Now we have to show that for every $n \in \mathbb{N}$ it follows that if $2^n\leq 3^n$ then  $2^{n+1} \leq 3^{n+1}$.
+
+We now fix $n$ arbitrary and assume that $2^n\leq 3^n$. 
+
+It follows from the inductive hypothesis that $2 * 2^n \leq 2 * 3^n$. Observe that since $2 < 3$ we have that $2 * 2^n \leq 2 * 3^n \leq 3 * 3^n$.
+
+Thus it follows that $2^{n + 1} \leq 3^{n + 1}$. Since $n$ was fixed arbitrary, the same holds for every $n \in \mathbb{N}$.
+
+By the Principle of Mathematical Induction we conclude Claim 1 as desired. 
+
+\end{proof}
+
+\begin{claim}{2}
+  \item Use Claim 1 to prove that $2^n+1\leq 3^n$ for every $n\in\mathbb{N}$.
+\end{claim}
+
+\begin{proof}
+
+We will show that Claim 2 is true by induction. 
+
+Consider our base case when $n = 1$. Note that $2^1 + 1\leq 3^1$ is true.
+
+In our inductive step we now show that for every $n \in \mathbb{N}$ we have that if $2^n + 1\leq 3^n$ then $2^{n+1} + 1\leq 3^{n+1}$.
+
+Fix $n$ arbitrary. We assume $2^n + 1\leq 3^n$. From the inductive hypothesis it follows that $2* (2^n + 1) \leq 3 *(3^n)$ because $2 < 3$. Then, it is true that $2^{n+1} + 2 \leq 3^{n+1}$. By rearranging the terms we get that $2 \leq 3^{n+1} - 2^{n+1}$. At this point observe that $1 < 2$, which means that $1 \leq 3^{n+1} - 2^{n+1}$. After rearranging the terms again we now get that $2^{n+1} + 1 \leq 3^{n+1}$. Recall that $n$ was fixed arbitrary, which means that we have shown the inductive step is true as desired.
+
+Thus, we have shown Claim 2 is true by the Principle of Mathematical Induction. 
+
+\end{proof}
+
+\begin{claim}{3}
+  \item Is it true that $2^n+n\leq 3^n$ for every $n\in\mathbb{N}$?
+\end{claim}
+
+\begin{proof}
+
+Proceeding by induction, we consider the base case when $n = 1$. We know that $2^1 + 1\leq 3^1 = 3 \leq3$ 
+
+Focusing now on the inductive step, we have to show that for every $n \in \mathbb{N}$ it follows that if $2^n+n\leq 3^n$ then it is also true that $2^{n + 1} + (n + 1) \leq 3^{n + 1}$.
+
+After fixing $n$ arbitrary, assume that $2^n+n\leq 3^n$. In a similar vein as in the previous proof, we use the fact that $2 < 3$ and our inductive hypothesis to get that $2* (2^n+n) \leq 3 * (3^n)$. After simplifying and rearranging the terms we have that $2n \leq 3^{n+1} - 2^{n+1}$. Seeking to show the inductive step we use the fact that $1 \leq n$ for every $n \in \mathbb{N}$ to deduce that for every $n \in \mathbb{N}$ we have that $n + 1 \leq 2n$. Using this fact, we can now rewrite our argument as $n + 1 \leq 3^{n+1} - 2^{n+1}$. Finally, after rearranging the terms we can see that $2^{n+1} + (n + 1) \leq 3^{n + 1})$. Since $n$ was fixed arbitrary, we know that the same statement holds true for every $n \in \mathbb{N}$ as desired.
+
+By the Principle of Mathematical Induction it follows that $2^n+n\leq 3^n$ for every $n\in\mathbb{N}$.
+
+\end{proof}
