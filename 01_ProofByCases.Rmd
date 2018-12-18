@@ -1,3 +1,40 @@
-# Proof By Cases
+# Proof By Cases (Triangle Inequality)
 
-This is the first proof.
+\begin{thm}[{\tt The Triangle Inequality}]
+For each pair of real numbers $x$ and $y$, one has that:
+\[
+|x + y|\leq |x| + |y|.
+\]
+\end{thm}
+
+(Hint: Consider cases like $x,y\geq0$ or $x,y\leq0$ or $x\geq0$ and $y<0$,  etc.. These cases will help you evaluate the absolute value using its definition.)
+
+\begin{proof}
+We proceed by cases.
+
+
+\textbf{Case 1:} $x\geq 0$ and $y \geq 0.$
+
+Note that by the definition of absolute value and since $x \geq 0$ and $y \geq 0$, we have that $|x| = x$ and $|y| = y$ and $|x + y| = x + y$ (since $x + y \geq 0$). 
+
+Thus it follows that $|x + y| \leq |x| + |y|$ (since $|x + y| = |x| + |y|$).
+
+
+\textbf{Case 2:} $x < 0$ and $y < 0.$
+
+Note that by the definition of absolute value and since $x < 0$ and $y < 0$, we have that $|x| = -x$ and $|y| = -y$ and $|x + y| = - (x + y) = -x - y$ (since $x + y < 0$). 
+
+Thus it follows that $|x + y| \leq |x| + |y|$ (since $|x + y| = |x| + |y|$).
+
+
+\textbf{Case 3:} $x\geq 0$ and $y \geq 0.$
+
+Note that by the definition of absolute value and since $x \geq 0$ and $y < 0$, we have that $|x| = x$ and $|y| = -y$. Now we need to consider two subcases in which $|x + y|$ can satisfy $|x + y| \geq 0$ or $|x + y| < 0$. 
+
+Suppose that $|x + y| \geq 0$. By the definition of absolute value it follows that $|x + y| = x + y$. Note that $ x - y \geq x + y$ because y is negative. By substituting we get that $|x + y| \leq |x| + |y|$.
+
+Now suppose that $|x + y| < 0$. Observe that $|x + y| \leq x$. Since y is negative we have that $|x + y| < x - y$. After substituting equivalent values we have that $|x + y| \leq |x| + |y|$.
+
+Since in Case 3 we have that $x$ and $y$ are arbitrary, we have exhausted the cases and we have that  $|x + y| \leq |x| + |y|$ for all $\mathbb{R}$.
+
+\end{proof}
