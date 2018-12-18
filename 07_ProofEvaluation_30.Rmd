@@ -1,10 +1,29 @@
 # Proof Evaluation 30
 
 \begin{claim}{1}
-Let $f:\mathbb{R} \to \mathbb{R}$ be a function and suppose that $A \subseteq \mathbb{R}$ is a nonempty set which is bounded from above. THen $f(A)$ is bounded from above.
+Let $f:\mathbb{R} \to \mathbb{R}$ be a function and suppose that $A \subseteq \mathbb{R}$ is a nonempty set which is bounded from above. Then $f(A)$ is bounded from above.
 \end{claim}
 
 \begin{proof}
-Let $u \in \mathbb{R}$ be an upper bound fror $A$. Then $a \leq u$ for all $a \in A$. This implies $f(a) \leq f(u)$ for all $a \in A$. Hence $f(u) \in \mathbb{R}$ is an upper bound for $f(A)$.
+Let $u \in \mathbb{R}$ be an upper bound for $A$. Then $a \leq u$ for all $a \in A$. This implies $f(a) \leq f(u)$ for all $a \in A$. Hence $f(u) \in \mathbb{R}$ is an upper bound for $f(A)$.
 \end{proof}
+
+---
+
+\begin{reflection}{What's wrong with the proof?}
+
+The proof above is not correct. To show this consider the function $f := \{(x, -(x^3)) \in R \times R: x \in A\}$. Observe how $-2 < 2$ but $f(-2) > f(2)$. Thus in the proof above the statement that $a \leq u$ for all $a \in A$ does not imply that $f(a) \leq f(u)$ for all $a \in A$. 
+
+\end{reflection}
+
+Here is an ammended claim and its proof.
+
+\begin{claim}{2}
+Let $f:\mathbb{R} \to \mathbb{R}$ be a nondecreasing function and suppose that $A \subseteq \mathbb{R}$ is a nonempty set which is bounded from above. Then $f(A)$ is bounded from above.
+\end{claim}
+
+\begin{proof}
+Let $u \in \mathbb{R}$ be an upper bound for $A$. Then $a \leq u$ for all $a \in A$. This implies $f(a) \leq f(u)$ for all $a \in A$ by the definition of a nondecreasing function. Hence $f(u) \in \mathbb{R}$ is an upper bound for $f(A)$.
+\end{proof}
+
 

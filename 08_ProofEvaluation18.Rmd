@@ -1,14 +1,20 @@
 # Proof Evaluation 18
 
 \begin{claim}{1}
-Given $a \in \mathbb{R} \setminus \{0\}$, one has that $a^n = 1$ for all $n \in \mathbb{N_0}$
+Given $a \in \mathbb{R} \setminus \{0\}$, one has that $a^n = 1$ for all $n \in \mathbb{N}_0$
 \end{claim}
 
 \begin{proof}
-If $n = 0$ then $a^0 = 1$. Thus the claim is true for the base case. Next, fix $n \in \mathbb{N} \cup \{0\}$ and assume that the claim is true for all $k \in \mathbb{N_0}$ with $k \leq n$, i.e., assume that $a^k = 1$ for all $k \in \mathbb{N_0}$ with $k \leq n$. We want to show that the claim is true for $n + 1$. Observe that
+If $n = 0$ then $a^0 = 1$. Thus the claim is true for the base case. Next, fix $n \in \mathbb{N} \cup \{0\}$ and assume that the claim is true for all $k \in \mathbb{N}_0$ with $k \leq n$, i.e., assume that $a^k = 1$ for all $k \in \mathbb{N}_0$ with $k \leq n$. We want to show that the claim is true for $n + 1$. Observe that
 
 \[a^{n+1} = \dfrac{a^n * a^n}{a^{n-1}} = \dfrac{1 * 1}{1} = 1\],
 
-where we have used the induction hypothesis in the second equality. Thus the claim is true for $n + 1$ and by PMI we can now conclude that the claim is true for all $n \in \mathbb{N_0}$.
+where we have used the induction hypothesis in the second equality. Thus the claim is true for $n + 1$ and by PMI we can now conclude that the claim is true for all $n \in \mathbb{N}_0$.
 \end{proof}
+
+---
+
+\begin{reflection}{What's wrong with the proof?}
+The error in this proof lies in the inductive step where we are indirectly assuming that $k \geq 1$ in order for us to have $a^{n-1}$ in the denominator. When $k<1$ we cannot use the inductive hypothesis because the exponent would not be a nonnegative number. We would have to check the base case at $n=1$ in order to be able to assume that $k \geq 1$, but at $n=1$ the statement is not true anymore. Thus the statement is a false one.
+\end{reflection}
 

@@ -1,0 +1,15 @@
+# Proof Evaluation 29
+
+\begin{claim}{1}
+Let $A \subseteq \mathbb{R}$ be a nonempty set and suppose that $\alpha := sup(A) \in \mathbb{R}$ exists. If $\varepsilon \in (0, \infty)$ then there exists $a \in A$ such that $\alpha - \varepsilon < a$.
+\end{claim}
+
+\begin{proof}
+Let $a := \alpha - \dfrac{\varepsilon}{2}$. Then $a < \alpha$ which implies $a \in A$. By construction $\alpha - \varepsilon < a$.
+\end{proof}
+
+---
+
+\begin{reflection{What's wrong with the proof?}
+
+\end{reflection}
