@@ -1,3 +1,17 @@
 # Direct Proof
 
-epsilon proof
+\begin{claim}{1}
+  $\displaystyle\lim\limits_{n\to\infty}\frac{3n}{n+2}=3$
+\end{claim}
+
+\begin{proof}
+
+To show Claim1 we will first fix $\varepsilon \in (0, \infty)$ arbitrary. Then, we define $N := \big\lceil 6/\varepsilon  \big\rceil + 1 \in \mathbb{N}$. Now we fix $n \in \mathbb{N}$, arbitrary and assume that $n \geq \big\lceil 6/\varepsilon  \big\rceil + 1$. 
+
+Observe that from the previous statement it follows that $n \geq 6/\varepsilon + 1$ and $n > 6/\varepsilon$. We can also write that $\varepsilon > 6/n$. Observe that $\varepsilon > \dfrac{6}{n + 2}$. We can rewrite the equivalent statement $\left| \dfrac{3n}{n + 2} - \dfrac{3n + 6}{n + 2} \right|$ and from this we have that $\left| \dfrac{3n}{n + 2} - 3\right| < \varepsilon$. 
+
+Since we had fixed $n$ and $\varepsilon$ arbitrary, then by the definition of a convergent sequence it follows that $\displaystyle\lim\limits_{n\to\infty}\frac{3n}{n+2}=3$ as desired.
+
+\end{proof}
+
+\newpage

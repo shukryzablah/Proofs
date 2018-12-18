@@ -58,3 +58,5 @@ After fixing $n$ arbitrary, assume that $2^n+n\leq 3^n$. In a similar vein as in
 By the Principle of Mathematical Induction it follows that $2^n+n\leq 3^n$ for every $n\in\mathbb{N}$.
 
 \end{proof}
+
+\newpage

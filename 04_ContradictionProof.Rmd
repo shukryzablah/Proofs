@@ -25,3 +25,5 @@ At this point we have that $x \in \prod\limits_{n=1}^{\infty}\mathbb{N}$ but als
 Hence, we have that shown that the original statement that $\prod\limits_{n=1}^{\infty}\mathbb{N}$ is uncountable is true.
 
 \end{proof}
+
+\newpage

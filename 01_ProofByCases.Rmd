@@ -38,3 +38,5 @@ Now suppose that $|x + y| < 0$. Observe that $|x + y| \leq x$. Since y is negati
 Since in Case 3 we have that $x$ and $y$ are arbitrary, we have exhausted the cases and we have that  $|x + y| \leq |x| + |y|$ for all $\mathbb{R}$.
 
 \end{proof}
+
+\newpage
