@@ -10,6 +10,20 @@ Let $a := \alpha - \dfrac{\varepsilon}{2}$. Then $a < \alpha$ which implies $a \
 
 ---
 
-\begin{reflection{What's wrong with the proof?}
-
+\begin{reflection}{What's wrong with the proof?}
+We think that the claim above is correct, but the proof is inadequate. The statement that if $a < \alpha$ then $a \in A$ needs to be proven before being used. It is not even clear to the reader what type of proof method they are engaging in.
 \end{reflection}
+
+Below is a correct proof for this statement.
+
+\begin{proof}
+
+We will show that the equivalent statement that if $\alpha - \varepsilon < a$ for every $a \in A$ then it follows that $\varepsilon \notin (0,\infty)$, is true.
+
+We assume that $\alpha - \varepsilon < a$ for every $a \in A$ and try to deduce $\varepsilon \notin (0,\infty)$. By the definition of the supremum of a set we know that for every $a \in A$ it is true that $\alpha \geq a$. 
+
+Seeking a contradiction, we will assume that $\varepsilon \in (0,\infty)$. Observe that since $\varepsilon > 0$ then $\alpha \geq \alpha - \varepsilon \geq a$ holds for every $a \in A$.
+
+By the definition of an upper bound, we have that $\alpha - \varepsilon$ is an upperbound for $A$. However, this contradicts the fact that $\alpha = sup(A)$ because  $\alpha \geq \alpha - \varepsilon$. It follows that our assumption was false and we have that $\varepsilon \notin (0,\infty)$ as desired. 
+
+\end{proof}
