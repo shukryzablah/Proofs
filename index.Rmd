@@ -13,6 +13,6 @@ output:
 
 # Preface
 
-The following are a set of proofs that summarize my progress in my Transition to Theoretical Mathematics (Amherst MATH221). 
+The following is a compilation that summarize my progress in my Transition to Theoretical Mathematics course (Amherst MATH221). 
 
 \newpage

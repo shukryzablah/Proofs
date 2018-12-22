@@ -6,6 +6,14 @@ Let $f:A\to B$ be a function. Prove the following statements.
   Let $C,D\subseteq B$. Then $f^{-1}(C) \cup f^{-1}(D) = f^{-1} \big( C \cup D \big)$.
 \end{claim}
 
+---
+
+## Why this proof? 
+
+Set proofs are one of the first types of proofs that we encountered in this course. Starting out with simple set proofs, we saw them again in the other topics like functions, countable sets, supremums, and so on. The reason I included the following proof is that it has a lot of moving parts that are straightforward, but easy to lose along the narrative. I think that the point of including this proof is showing that the flow of my arguments has improven over time. At every step, explaining why we are performing it, is very important in terms of readibility.
+
+---
+
 \begin{proof}
 
 We will show that Claim 1 is true by showing $f^{-1}(C) \cup f^{-1}(D) \subseteq f^{-1} \big( C \cup D \big)$ and $f^{-1} \big( C \cup D \big) \subseteq f^{-1}(C) \cup f^{-1}(D)$.
@@ -23,12 +31,12 @@ Since we have shown that $f^{-1}(C) \cup f^{-1}(D) \subseteq f^{-1} \big( C \cup
 
 \end{proof}
   
-\begin{claim}{2}
-  Let $C,D\subseteq A$. If $f$ is injective then $f(C)\cap f(D)\subseteq f\big(C\cap D\big)$.
-\end{claim}
+---
 
-\begin{proof}
-\end{proof}
+## Reflection
+
+Looking back, most of the changes to this version of the proof revolve around explaining at each step the reason we are taking that step. I think that this makes the proof friendlier and more organized. 
+
 
 \newpage
 

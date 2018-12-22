@@ -1,11 +1,37 @@
 # Contraposition Proof
 
 \begin{claim}{1}
-
+Let $n,m \in \mathbb{Z}$. If $n^2*(m+3)$ is even then $n$ is even or $m$ is odd.
 \end{claim}
+
+---
+
+## Why this proof? 
+
+I had trouble picking out what proof by contraposition I wanted to include in this portfolio. The trouble was mainly because this was the least common method that I used. The only place I used contraposition by the end of the semester was within supremum proofs, but the proof technique did not shine through because it was in just a subproof after all (proving that the supremum is the least upper bound). In summary, this proof, while simple, is a great example of the power of contraposition because of it's consequent. I think that it is clear that by taking the path of proof by contrapositive we are working with more manageable pieces of the puzzle and the solution lends itself to the way the contrapositive is laid out.
+
+---
 
 \begin{proof}
 
+We will assume that it is not the case that n is even or m is odd and show that $n^2*(m+3)$ must be odd. Our assumption that it is not the case that $n$ is even or $m$ is odd is equivalent to the statement that $n$ is odd and $m$ is even. 
+By definition, this means that we can write $n = 2k + 1$ for some $k \in \mathbb{Z}$ and $m = 2l$ for some $l \in \mathbb{Z}$. 
+
+Now, observe that we have the following: 
+\[n^2*(m+3)\]
+\[(2k+1)^2*(2l+3)=\]
+\[(4k^2 + 4k + 1)(2l + 3)=\]
+\[8k^2l+12k^2+8kl+12k+2l+3=\]
+\[2(4kl+6k^2+4kl+6k+l+1) + 1.\]
+
+Since $4kl+6k^2+4kl+6k+l+1 \in \mathbb{Z}$ then by definition we have that $n^2*(m+3)$ is odd as desired. 
+
 \end{proof}
+
+---
+
+## Reflection
+
+I did not change this proof too much from the original. The changes that I included were in the beginning, were I was making it even clearer that this is a proof by contraposition (without stating it explicitly because that somehow felt less elegant). I also didn't skip the step where I applied DeMorgan's Laws to translate the negation of the OR statement to an AND statement.
 
 \newpage

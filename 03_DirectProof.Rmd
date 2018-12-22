@@ -4,14 +4,28 @@
   $\displaystyle\lim\limits_{n\to\infty}\frac{3n}{n+2}=3$
 \end{claim}
 
+---
+
+## Why this proof? 
+
+Epsilon-N proofs are a very clear example of what direct proof tries to achieve. To prove the statement one must work backwards in order to understand what this forward and direct path is. It is very clear what the technique is trying to achieve, and in just a couple of steps we can prove a big statement about how a series behaves when n approaches infinity. The proof technique here adheres neatly to the definition, and it seems to be the easiest and clearest way to prove that a sequence converges to a given value. 
+
+---
+
 \begin{proof}
 
-To show Claim1 we will first fix $\varepsilon \in (0, \infty)$ arbitrary. Then, we define $N := \big\lceil 6/\varepsilon  \big\rceil + 1 \in \mathbb{N}$. Now we fix $n \in \mathbb{N}$, arbitrary and assume that $n \geq \big\lceil 6/\varepsilon  \big\rceil + 1$. 
+To show Claim 1 we will first fix $\varepsilon \in (0, \infty)$ arbitrary. Then, we define $N := \big\lceil 6/\varepsilon  \big\rceil + 1 \in \mathbb{N}$. Now we fix $n \in \mathbb{N}$, arbitrary and assume that $n \geq \big\lceil 6/\varepsilon  \big\rceil + 1$. 
 
-Observe that from the previous statement it follows that $n \geq 6/\varepsilon + 1$ and $n > 6/\varepsilon$. We can also write that $\varepsilon > 6/n$. Observe that $\varepsilon > \dfrac{6}{n + 2}$. We can rewrite the equivalent statement $\left| \dfrac{3n}{n + 2} - \dfrac{3n + 6}{n + 2} \right|$ and from this we have that $\left| \dfrac{3n}{n + 2} - 3\right| < \varepsilon$. 
+Observe that from the previous statement it follows that $n \geq 6/\varepsilon + 1$ and $n > 6/\varepsilon$. We can also write that $\varepsilon > 6/n$. Observe that $\varepsilon > \dfrac{6}{n + 2}$. We can rewrite the equivalent statement $\left| \dfrac{3n}{n + 2} - \dfrac{3n + 6}{n + 2} \right| < \varepsilon$ and from this we have that $\left| \dfrac{3n}{n + 2} - 3\right| < \varepsilon$. 
 
 Since we had fixed $n$ and $\varepsilon$ arbitrary, then by the definition of a convergent sequence it follows that $\displaystyle\lim\limits_{n\to\infty}\frac{3n}{n+2}=3$ as desired.
 
 \end{proof}
+
+---
+
+## Reflection
+
+The most important change in the proof is that the original one had a big mistake when choosing $N$. In the original version $N$ could become a negative number due to an extra term that was being subtracted from it. After doing the same mistake in the second midterm, I understood the problem and learned how to avoid it. Other changes included a little bit more transition words that makes the argument flow more like a paragraph instead of a series of disjoint mathematical facts. 
 
 \newpage

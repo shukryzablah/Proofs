@@ -4,26 +4,40 @@ Let $\prod\limits_{n=1}^{\infty}\mathbb{N}:=\mathbb{N}\times\mathbb{N}\times\cdo
 
 \begin{claim}{1}
 
-$\prod\limits_{n=1}^{\infty}\mathbb{N}$ is uncountable.
+$\prod\limits_{k=1}^{\infty}\mathbb{N}$ is uncountable.
 
 \end{claim}
+
+---
+
+## Why this proof? 
+
+I chose this proof because I felt very proud of the work I put into proving the statement. I remember that in class I asked whether this statement was true, and the next thing I knew, I was doing it in the homework assignment! I feel that this proof has a lot of moving parts but it is very easy to see that the general intent is to find a contradiction. The proof by contradiction technique gives us material to work with, and even the shortness of the claim seems to hint at the importance of the usage of this technique.
+
+---
 
 \begin{proof}
 
 We proceed to show the original statement is true by contradiction. 
 
-Assume to the contrary that $\prod\limits_{n=1}^{\infty}\mathbb{N}$ is countable. By definition it follows that there exists a bijection $\varphi:\mathbb{N} \to \prod\limits_{n=1}^{\infty}\mathbb{N}$. Seeking a contradiction, we will show how $\varphi$ cannot be surjective. 
+Assume to the contrary that $\prod\limits_{k=1}^{\infty}\mathbb{N}$ is countable. By definition it follows that there exists a bijection $\varphi:\mathbb{N} \to \prod\limits_{k=1}^{\infty}\mathbb{N}$. Seeking a contradiction, we will show how $\varphi$ cannot be surjective. 
 
-Since $\varphi$ is bijective, we know that $f(n) \in \prod\limits_{n=1}^{\infty}\mathbb{N}$ for every $n \in \mathbb{N}$. For every $n \in \mathbb{N}$ we can write $f(n) = (a_1^{(n)}, a_2^{(n)}, a_3^{(n)} \dots, a_m^{(n)}, \dots)$, where $m \in \mathbb{N}$.
+Since $\varphi$ is bijective, we know that $\varphi(m) \in \prod\limits_{k=1}^{\infty}\mathbb{N}$ for every $m \in \mathbb{N}$. For every $m \in \mathbb{N}$ we can write $\varphi(m) = (a_1^{(m)}, a_2^{(m)}, a_3^{(m)} \dots, a_n^{(m)}, \dots)$, where $n \in \mathbb{N}$.
 
-Let's define $x \in \prod\limits_{n=1}^{\infty}\mathbb{N}$ by setting $a_{m}^{(n)}:=\begin{cases}3 \text{ if } a ^{\left( n\right) }_{n} \neq 3\\4 \text{ if }a^{\left( n\right) }_{n}=3\end{cases}$ for every $k \in \mathbb{N}$.
+Let's define $x \in \prod\limits_{k=1}^{\infty}\mathbb{N}$ by setting $a_{n}^{l}:=\begin{cases}3 \text{ if } a ^{( n)}_{n} \neq 3\\4 \text{ if }a^{\left( n\right) }_{n}=3\end{cases}$ for every $n \in \mathbb{N}$.
 
-Thus, by construction we have that $x \neq f(n)$ for every $n \in \mathbb{N}$ since $a_m^{(n)} \neq a_n^{(n)}$.
+Thus, by construction we have that $x \neq f(m)$ for every $m \in \mathbb{N}$ since $a_n^{(m)} \neq a_n^{(l)}$.
 
-At this point we have that $x \in \prod\limits_{n=1}^{\infty}\mathbb{N}$ but also for every $n \in \mathbb{N}$ we have that $x \notin f(n)$. This means that by definition, $varphi$ cannot be surjective, and since $\varphi$ had been said to be bijective, is a contradiction. 
+At this point we have that $x \in \prod\limits_{n=1}^{\infty}\mathbb{N}$ but also for every $m \in \mathbb{N}$ we have that $x \notin f(m)$. This means that by definition, $\varphi$ cannot be surjective, and since $\varphi$ had been said to be bijective, it is a contradiction. 
 
-Hence, we have that shown that the original statement that $\prod\limits_{n=1}^{\infty}\mathbb{N}$ is uncountable is true.
+Hence, we have that shown that the original statement that $\prod\limits_{k=1}^{\infty}\mathbb{N}$ is uncountable is true.
 
 \end{proof}
+
+---
+
+## Reflection
+
+Again, the main changes that I included in this proof are geared towards improving its readibility. I think that the notation of subscripts was confusing the first time I saw it and I tried to clarify which parts were which in the final version by using different letter names. Overall, the proof is clearer and more friendly. 
 
 \newpage

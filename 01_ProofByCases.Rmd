@@ -7,7 +7,15 @@ For each pair of real numbers $x$ and $y$, one has that:
 \]
 \end{thm}
 
-(Hint: Consider cases like $x,y\geq0$ or $x,y\leq0$ or $x\geq0$ and $y<0$,  etc.. These cases will help you evaluate the absolute value using its definition.)
+---
+
+## Why this proof? 
+
+The reason this proof is included is that the Triangle Inequality is the clearest example of the proof by cases technique. The way that the proof generally follows from the definition of the absolute value makes cases clear and it is easy to see they are exhaustive. Additionally, I thought that it was important that the fourth case does not need to be proven because it is the same as the third case but with the variables switched. 
+
+The first time I did the proof I was not able to write it down, and when I had it in the homework I did not end up feeling comfortable about it. Thus, revisiting this proof and understanding what is going on, as well as revisiting the proof technique used here, was important as the course closed off. 
+
+---
 
 \begin{proof}
 We proceed by cases.
@@ -38,5 +46,15 @@ Now suppose that $|x + y| < 0$. Observe that $|x + y| \leq x$. Since y is negati
 Since in Case 3 we have that $x$ and $y$ are arbitrary, we have exhausted the cases and we have that  $|x + y| \leq |x| + |y|$ for all $\mathbb{R}$.
 
 \end{proof}
+
+---
+
+## Reflection
+
+Looking back at the original version of this proof I can see that I have clearly improved the proof's readibility. These changes in the narrative of the proof were included because I now know that it is important for a proof to be transparent to a new reader as well as correct. 
+
+I changed the cases a bit in order to make the proof technique stand out more and flow better one into the other.
+
+---
 
 \newpage

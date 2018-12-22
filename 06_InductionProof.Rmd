@@ -1,5 +1,13 @@
 # Induction Proof
 
+---
+
+## Why this proof? 
+
+These are actually several subproblems that were included in one problem of the homework assignment. I remember that I had trouble understanding how to manipulate the terms in order to show the inductive step was true while using the inductive hypothesis. Induction seems to be the most straightforward method to solve these problems, and these proofs are evidence (haha) that I have learned how to reason through induction.  
+
+---
+
 Proof the following claims.
 
 \begin{claim}{1}
@@ -58,5 +66,14 @@ After fixing $n$ arbitrary, assume that $2^n+n\leq 3^n$. In a similar vein as in
 By the Principle of Mathematical Induction it follows that $2^n+n\leq 3^n$ for every $n\in\mathbb{N}$.
 
 \end{proof}
+
+---
+
+## Reflection
+
+I don't think the original version of these proofs had mistakes, but I think that they were just drafts. In choosing these proofs I wanted to polish those proof drafts (with $\implies$ and $\forall$) and make them neat and readable. 
+
+
+---
 
 \newpage
